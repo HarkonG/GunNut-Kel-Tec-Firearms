@@ -13,8 +13,8 @@
                 <li Class="PatchOperationReplace">
                     <xpath>
 				    /Defs/ThingDef[
-					defName = "GN_KSG_L" or																
-					defName = "GN_KSG_S"]/tools
+					defName = "HRK_KSG_L" or																
+					defName = "HRK_KSG_S"]/tools
                     </xpath>
                     <value>
                         <tools>
@@ -55,7 +55,7 @@
 
                 <!--===== KSG =====-->
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>GN_KSG_S</defName>
+                    <defName>HRK_KSG_S</defName>
                     <statBases>
                         <Mass>2.8</Mass>
                         <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
@@ -76,7 +76,7 @@
                         <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
                         <warmupTime>0.6</warmupTime>
                         <range>18</range>
-                        <soundCast>GN_Shot_KSG</soundCast>
+                        <soundCast>HRK_Shot_KSG</soundCast>
                         <soundCastTail>GunTail_Heavy</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
                     </Properties>
@@ -97,7 +97,7 @@
 
                 <!--===== KSG-25 =====-->
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>GN_KSG_L</defName>
+                    <defName>HRK_KSG_L</defName>
                     <statBases>
                         <Mass>3.1</Mass>
                         <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
@@ -118,7 +118,7 @@
                         <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
                         <warmupTime>0.6</warmupTime>
                         <range>25</range>
-                        <soundCast>GN_Shot_KSG</soundCast>
+                        <soundCast>HRK_Shot_KSG</soundCast>
                         <soundCastTail>GunTail_Heavy</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
                     </Properties>

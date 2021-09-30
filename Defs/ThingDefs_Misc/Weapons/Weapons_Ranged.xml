@@ -4,7 +4,7 @@
 
   <!--===== KSG Bullet =====-->
   <ThingDef ParentName="BaseBullet">
-    <defName>GN_Bullet_KSG</defName>
+    <defName>HRK_Bullet_KSG</defName>
     <label>KSG shotgun blast</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Shotgun</texPath>
@@ -20,22 +20,20 @@
   </ThingDef>
 
   <!--===== KSG =====-->
-  <ThingDef ParentName="GNKSG_BaseHumanMakeableGun">
-    <defName>GN_KSG_S</defName>
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_KSG_S</defName>
     <label>KSG</label>
     <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells.  There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
     <graphicData>
-      <texPath>Things/Weapons/GN_KSG_S</texPath>
+      <texPath>Things/Weapons/HRK_KSG_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.9</drawSize>
+      <drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
+      <drawOffsetEast>(0.01, 0.0, 0.0)</drawOffsetEast>
+      <drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
+      <drawOffsetWest>(-0.01, 0.0, 0.0)</drawOffsetWest>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <comps>
-      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-        <eastOffset>(0.01,0,0)</eastOffset>
-        <westOffset>(-0.01,0,0)</westOffset>
-      </li>
-    </comps>
     <soundInteract>Interact_Shotgun</soundInteract>
     <recipeMaker>
       <recipeUsers>
@@ -64,10 +62,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>GN_Bullet_KSG</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_KSG</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>20</range>
-        <soundCast>GN_Shot_KSG</soundCast>
+        <soundCast>HRK_Shot_KSG</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -91,31 +89,32 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
   </ThingDef>
 
   <!--===== KSG-25 =====-->
-  <ThingDef ParentName="GNKSG_BaseHumanMakeableGun">
-    <defName>GN_KSG_L</defName>
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_KSG_L</defName>
     <label>KSG-25</label>
     <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells.  There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
     <graphicData>
-      <texPath>Things/Weapons/GN_KSG_L</texPath>
+      <texPath>Things/Weapons/HRK_KSG_L</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.9</drawSize>
+      <drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
+      <drawOffsetEast>(0.01, 0.0, 0.0)</drawOffsetEast>
+      <drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
+      <drawOffsetWest>(-0.01, 0.0, 0.0)</drawOffsetWest>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <comps>
-      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-        <eastOffset>(0.01,0,0)</eastOffset>
-        <westOffset>(-0.01,0,0)</westOffset>
-      </li>
-    </comps>
     <soundInteract>Interact_Shotgun</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
-      <researchPrerequisite>GN_Research</researchPrerequisite>
+      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -138,10 +137,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>GN_Bullet_KSG</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_KSG</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>28</range>
-        <soundCast>GN_Shot_KSG</soundCast>
+        <soundCast>HRK_Shot_KSG</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -165,6 +164,9 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
   </ThingDef>
 
 </Defs>

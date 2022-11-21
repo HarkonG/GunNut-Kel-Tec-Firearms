@@ -3,6 +3,90 @@
 <Defs>
 
   <!--===== Kel-Tec CP33 =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>HRK_Bullet_KelTecCP33P</defName>
+    <label>Kel-Tec CP33 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_KelTecCP33P</defName>
+    <label>Kel-Tec CP33</label>
+    <description>_</description>
+    <graphicData>
+      <texPath>Things/Weapons/HRK_KelTecCP33P/HRK_KelTecCP33P_Black</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <soundInteract>HRK_Reload_PM_a</soundInteract>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.87</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.84</AccuracyMedium>
+      <AccuracyLong>0.58</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HRK_Bullet_KelTecCP33P</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>20</range>
+        <soundCast>HRK_Shot_KelTecCP33P</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+  </ThingDef>
 
   <!--===== Kel-Tec KSG =====-->
   <ThingDef ParentName="BaseBullet">
@@ -28,7 +112,7 @@
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecKSG/HRK_KelTecKSG_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.1</drawSize>
+      <drawSize>1.0</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>HRK_Interact_FastPump_a</soundInteract>
@@ -63,7 +147,7 @@
         <warmupTime>0.9</warmupTime>
         <range>20</range>
         <soundCast>HRK_Shot_KelTecKSG</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -97,9 +181,9 @@
     <label>Kel-Tec KSG-25</label>
     <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells.  There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_KelTecKSG25/HRK_KelTecKSG25_Black</texPath>
+      <texPath>Things/Weapons/HRK_KelTecKSG25S/HRK_KelTecKSG25S_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.1</drawSize>
+      <drawSize>1.0</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>HRK_Interact_FastPump_a</soundInteract>
@@ -134,7 +218,7 @@
         <warmupTime>0.9</warmupTime>
         <range>28</range>
         <soundCast>HRK_Shot_KelTecKSG</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -163,11 +247,334 @@
   </ThingDef>
 
   <!--===== Kel-Tec P50 =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>HRK_Bullet_KelTecP50P</defName>
+    <label>Kel-Tec P50 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_KelTecP50P</defName>
+    <label>Kel-Tec P50</label>
+    <description>_</description>
+    <graphicData>
+      <texPath>Things/Weapons/HRK_KelTecP50P/HRK_KelTecP50P_Black</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <soundInteract>HRK_Reload_P90_a</soundInteract>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.87</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.84</AccuracyMedium>
+      <AccuracyLong>0.58</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HRK_Bullet_KelTecP50P</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>20</range>
+        <soundCast>HRK_Shot_KelTecP50P</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+  </ThingDef>
 
   <!--===== Kel-Tec RDB17 =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>HRK_Bullet_KelTecRDB_C</defName>
+    <label>Kel-Tec RDB Bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_KelTecRDB_C</defName>
+    <label>Kel-Tec RDB</label>
+    <description>_</description>
+    <graphicData>
+      <texPath>Things/Weapons/HRK_KelTecRDB_C/HRK_KelTecRDB_C_Black</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>HRK_Reload_STANAG</soundInteract>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.87</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.84</AccuracyMedium>
+      <AccuracyLong>0.58</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HRK_Bullet_KelTecRDB_C</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>20</range>
+        <soundCast>HRK_Shot_KelTecRDB</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+  </ThingDef>
 
   <!--===== Kel-Tec RFB =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>HRK_Bullet_KelTecRFB</defName>
+    <label>Kel-Tec RFB shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_KelTecRFB</defName>
+    <label>Kel-Tec RFB</label>
+    <description>_</description>
+    <graphicData>
+      <texPath>Things/Weapons/HRK_KelTecRFB/HRK_KelTecRFB_Black</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>HRK_Reload_KelTecRFB_a</soundInteract>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.87</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.84</AccuracyMedium>
+      <AccuracyLong>0.58</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HRK_Bullet_KelTecRFB</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>20</range>
+        <soundCast>HRK_Shot_KelTecRFB</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+  </ThingDef>
 
   <!--===== Kel-Tec RFB Hunter =====-->
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_KelTecRFB_C</defName>
+    <label>Kel-Tec RFB Hunter</label>
+    <description>_</description>
+    <graphicData>
+      <texPath>Things/Weapons/HRK_KelTecRFB_C/HRK_KelTecRFB_C_Black</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>HRK_Reload_KelTecRFB_a</soundInteract>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3</Mass>
+      <AccuracyTouch>0.87</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.84</AccuracyMedium>
+      <AccuracyLong>0.58</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HRK_Bullet_KelTecRFB</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>20</range>
+        <soundCast>HRK_Shot_KelTecRFBSD</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+  </ThingDef>
 
 </Defs>

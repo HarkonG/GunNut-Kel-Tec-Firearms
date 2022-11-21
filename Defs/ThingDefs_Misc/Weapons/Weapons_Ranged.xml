@@ -22,7 +22,7 @@
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_KelTecCP33P</defName>
     <label>Kel-Tec CP33</label>
-    <description>_</description>
+    <description>CP stands for Competition Pistol and 33, well… it holds a staggering 33 rounds in each magazine, right out of the box.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecCP33P/HRK_KelTecCP33P_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -266,7 +266,7 @@
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_KelTecP50P</defName>
     <label>Kel-Tec P50</label>
-    <description>_</description>
+    <description>The P50 is a straight blowback semi-automatic pistol that feeds from FN P90 magazines.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecP50P/HRK_KelTecP50P_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -352,7 +352,7 @@
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_KelTecRDB_C</defName>
     <label>Kel-Tec RDB</label>
-    <description>_</description>
+    <description>The Kel-Tec RDB (Rifle, Downward-ejection, Bullpup) is a bullpup carbine offered in 5.56x45mm NATO semi-automatic rifle, manufactured by Kel-Tec Industries of Florida. It uses a rotary bolt with a spring loaded ejector and an extractor facing down, ejecting spent shell casings downward, allowing easy ambidextrous use.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecRDB_C/HRK_KelTecRDB_C_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -439,7 +439,7 @@
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_KelTecRFB</defName>
     <label>Kel-Tec RFB</label>
-    <description>_</description>
+    <description>The Kel-Tec RFB (Rifle, Forward-ejection, Bullpup)[4] is a gas-operated bullpup type semi-automatic rifle, manufactured by Kel-Tec Industries of Florida.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecRFB/HRK_KelTecRFB_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -510,7 +510,7 @@
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_KelTecRFB_C</defName>
     <label>Kel-Tec RFB Hunter</label>
-    <description>_</description>
+    <description>The Kel-Tec RFB (Rifle, Forward-ejection, Bullpup)[4] is a gas-operated bullpup type semi-automatic rifle, manufactured by Kel-Tec Industries of Florida.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecRFB_C/HRK_KelTecRFB_C_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>

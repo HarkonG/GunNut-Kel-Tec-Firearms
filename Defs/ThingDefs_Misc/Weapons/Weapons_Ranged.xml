@@ -2,10 +2,12 @@
 
 <Defs>
 
-  <!--===== KSG Bullet =====-->
+  <!--===== Kel-Tec CP33 =====-->
+
+  <!--===== Kel-Tec KSG =====-->
   <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_KSG</defName>
-    <label>KSG shotgun blast</label>
+    <defName>HRK_Bullet_KelTecKSG</defName>
+    <label>Kel-Tec KSG shotgun blast</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -19,22 +21,17 @@
     </projectile>
   </ThingDef>
 
-  <!--===== KSG =====-->
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
-    <defName>HRK_KSG_S</defName>
-    <label>KSG</label>
+    <defName>HRK_KelTecKSG</defName>
+    <label>Kel-Tec KSG</label>
     <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells.  There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_KSG_S</texPath>
+      <texPath>Things/Weapons/HRK_KelTecKSG/HRK_KelTecKSG_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.9</drawSize>
-      <drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
-      <drawOffsetEast>(0.01, 0.0, 0.0)</drawOffsetEast>
-      <drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
-      <drawOffsetWest>(-0.01, 0.0, 0.0)</drawOffsetWest>
+      <drawSize>1.1</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>Interact_Shotgun</soundInteract>
+    <soundInteract>HRK_Interact_FastPump_a</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -62,10 +59,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_KSG</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_KelTecKSG</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>20</range>
-        <soundCast>HRK_Shot_KSG</soundCast>
+        <soundCast>HRK_Shot_KelTecKSG</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -94,22 +91,18 @@
     </weaponTags>
   </ThingDef>
 
-  <!--===== KSG-25 =====-->
+  <!--===== Kel-Tec KSG-25 =====-->
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
-    <defName>HRK_KSG_L</defName>
-    <label>KSG-25</label>
+    <defName>HRK_KelTecKSG25S</defName>
+    <label>Kel-Tec KSG-25</label>
     <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells.  There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_KSG_L</texPath>
+      <texPath>Things/Weapons/HRK_KelTecKSG25/HRK_KelTecKSG25_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.9</drawSize>
-      <drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
-      <drawOffsetEast>(0.01, 0.0, 0.0)</drawOffsetEast>
-      <drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
-      <drawOffsetWest>(-0.01, 0.0, 0.0)</drawOffsetWest>
+      <drawSize>1.1</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>Interact_Shotgun</soundInteract>
+    <soundInteract>HRK_Interact_FastPump_a</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -137,10 +130,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_KSG</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_KelTecKSG</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>28</range>
-        <soundCast>HRK_Shot_KSG</soundCast>
+        <soundCast>HRK_Shot_KelTecKSG</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -168,5 +161,13 @@
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
   </ThingDef>
+
+  <!--===== Kel-Tec P50 =====-->
+
+  <!--===== Kel-Tec RDB17 =====-->
+
+  <!--===== Kel-Tec RFB =====-->
+
+  <!--===== Kel-Tec RFB Hunter =====-->
 
 </Defs>

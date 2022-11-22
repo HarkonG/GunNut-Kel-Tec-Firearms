@@ -29,11 +29,12 @@
       <drawSize>1.0</drawSize>
     </graphicData>
     <soundInteract>HRK_Reload_PM_a</soundInteract>
+    <generateCommonality>0.05</generateCommonality>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
-      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>2</Crafting>
       </skillRequirements>
@@ -84,7 +85,7 @@
       </li>
     </tools>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
+      <li>SimpleGun</li>
     </weaponTags>
   </ThingDef>
 
@@ -170,7 +171,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
     <weaponTags>
+      <li>ShortShots</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
   </ThingDef>
@@ -241,7 +246,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
     <weaponTags>
+      <li>ShortShots</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
   </ThingDef>
@@ -272,12 +281,12 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
-    <soundInteract>HRK_Reload_P90_a</soundInteract>
+    <soundInteract>BlowbackOperation</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
-      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
@@ -328,6 +337,7 @@
       </li>
     </tools>
     <weaponTags>
+      <li>Autopistol</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
   </ThingDef>
@@ -363,7 +373,7 @@
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
-      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -450,7 +460,7 @@
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
-      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
@@ -501,6 +511,7 @@
       </li>
     </tools>
     <weaponTags>
+      <li>SimpleGun</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
   </ThingDef>
@@ -521,7 +532,7 @@
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
-      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>

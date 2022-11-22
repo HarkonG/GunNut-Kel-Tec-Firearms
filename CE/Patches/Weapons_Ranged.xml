@@ -1,143 +1,383 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
 
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Combat Extended</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-
-                <!--===== TOOLS FOR THE TOOL GOD =====-->
-                <li Class="PatchOperationReplace">
-                    <xpath>
+            <!--===== TOOLS FOR THE TOOL GOD =====-->
+            <li Class="PatchOperationReplace">
+                <xpath>
 				    /Defs/ThingDef[
-					defName = "HRK_KSG_L" or																
-					defName = "HRK_KSG_S"]/tools
-                    </xpath>
-                    <value>
-                        <tools>
-                            <li Class="CombatExtended.ToolCE">
-                                <label>stock</label>
-                                <capacities>
-                                    <li>Blunt</li>
-                                </capacities>
-                                <power>8</power>
-                                <cooldownTime>1.55</cooldownTime>
-                                <chanceFactor>1.5</chanceFactor>
-                                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-                                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
-                            </li>
-                            <li Class="CombatExtended.ToolCE">
-                                <label>barrel</label>
-                                <capacities>
-                                    <li>Blunt</li>
-                                </capacities>
-                                <power>5</power>
-                                <cooldownTime>2.02</cooldownTime>
-                                <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
-                                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
-                            </li>
-                            <li Class="CombatExtended.ToolCE">
-                                <label>muzzle</label>
-                                <capacities>
-                                    <li>Poke</li>
-                                </capacities>
-                                <power>8</power>
-                                <cooldownTime>1.55</cooldownTime>
-                                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-                                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-                            </li>
-                        </tools>
-                    </value>
-                </li>
+                    defName = "HRK_KelTecCP33P" or
+                    defName = "HRK_KelTecP50P"]/tools
+                </xpath>
+                <value>
+                    <tools>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>grip</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>2</power>
+                            <cooldownTime>1.54</cooldownTime>
+                            <chanceFactor>1.5</chanceFactor>
+                            <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>muzzle</label>
+                            <capacities>
+                                <li>Poke</li>
+                            </capacities>
+                            <power>2</power>
+                            <cooldownTime>1.54</cooldownTime>
+                            <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                        </li>
+                    </tools>
+                </value>
+            </li>
 
-                <!--===== KSG =====-->
-                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>HRK_KSG_S</defName>
-                    <statBases>
-                        <Mass>2.8</Mass>
-                        <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
-                        <SightsEfficiency>1.0</SightsEfficiency>
-                        <ShotSpread>0.14</ShotSpread>
-                        <SwayFactor>1.35</SwayFactor>
-                        <Bulk>6.60</Bulk>
-                        <WorkToMake>17000</WorkToMake>
-                    </statBases>
-                    <costList>
-                        <Chemfuel>10</Chemfuel>
-                        <Steel>50</Steel>
-                        <ComponentIndustrial>2</ComponentIndustrial>
-                    </costList>
-                    <Properties>
-                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-                        <hasStandardCommand>true</hasStandardCommand>
-                        <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
-                        <warmupTime>0.6</warmupTime>
-                        <range>18</range>
-                        <soundCast>HRK_Shot_KSG</soundCast>
-                        <soundCastTail>GunTail_Heavy</soundCastTail>
-                        <muzzleFlashScale>9</muzzleFlashScale>
-                    </Properties>
-                    <AmmoUser>
-                        <magazineSize>15</magazineSize>
-                        <reloadOneAtATime>true</reloadOneAtATime>
-                        <reloadTime>0.85</reloadTime>
-                        <ammoSet>AmmoSet_12Gauge</ammoSet>
-                    </AmmoUser>
-                    <FireModes>
-                        <aiUseBurstMode>FALSE</aiUseBurstMode>
-                        <aiAimMode>Snapshot</aiAimMode>
-                    </FireModes>
-                    <weaponTags>
-                        <li>CE_AI_AssaultWeapon</li>
-                    </weaponTags>
-                </li>
+            <li Class="PatchOperationReplace">
+                <xpath>
+				    /Defs/ThingDef[
+					defName = "HRK_KelTecKSG" or
+					defName = "HRK_KelTecKSG25S" or
+					defName = "HRK_KelTecRDB_C" or
+					defName = "HRK_KelTecRFB" or
+                    defName = "HRK_KelTecRFB_C"]/tools
+                </xpath>
+                <value>
+                    <tools>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>stock</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>8</power>
+                            <cooldownTime>1.55</cooldownTime>
+                            <chanceFactor>1.5</chanceFactor>
+                            <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>barrel</label>
+                            <capacities>
+                                <li>Blunt</li>
+                            </capacities>
+                            <power>5</power>
+                            <cooldownTime>2.02</cooldownTime>
+                            <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>muzzle</label>
+                            <capacities>
+                                <li>Poke</li>
+                            </capacities>
+                            <power>8</power>
+                            <cooldownTime>1.55</cooldownTime>
+                            <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                        </li>
+                    </tools>
+                </value>
+            </li>
 
-                <!--===== KSG-25 =====-->
-                <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>HRK_KSG_L</defName>
-                    <statBases>
-                        <Mass>3.1</Mass>
-                        <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
-                        <SightsEfficiency>1.1</SightsEfficiency>
-                        <ShotSpread>0.10</ShotSpread>
-                        <SwayFactor>1.10</SwayFactor>
-                        <Bulk>8.0</Bulk>
-                        <WorkToMake>19000</WorkToMake>
-                    </statBases>
-                    <costList>
-                        <Chemfuel>10</Chemfuel>
-                        <Steel>60</Steel>
-                        <ComponentIndustrial>2</ComponentIndustrial>
-                    </costList>
-                    <Properties>
-                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-                        <hasStandardCommand>true</hasStandardCommand>
-                        <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
-                        <warmupTime>0.6</warmupTime>
-                        <range>25</range>
-                        <soundCast>HRK_Shot_KSG</soundCast>
-                        <soundCastTail>GunTail_Heavy</soundCastTail>
-                        <muzzleFlashScale>9</muzzleFlashScale>
-                    </Properties>
-                    <AmmoUser>
-                        <magazineSize>25</magazineSize>
-                        <reloadOneAtATime>true</reloadOneAtATime>
-                        <reloadTime>0.85</reloadTime>
-                        <ammoSet>AmmoSet_12Gauge</ammoSet>
-                    </AmmoUser>
-                    <FireModes>
-                        <aiUseBurstMode>FALSE</aiUseBurstMode>
-                        <aiAimMode>Snapshot</aiAimMode>
-                    </FireModes>
-                    <weaponTags>
-                        <li>CE_AI_AssaultWeapon</li>
-                    </weaponTags>
-                </li>
+            <!--===== HRK_KelTecCP33P =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>HRK_KelTecCP33P</defName>
+                <statBases>
+                    <Mass>2.8</Mass>
+                    <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
+                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <ShotSpread>0.14</ShotSpread>
+                    <SwayFactor>1.35</SwayFactor>
+                    <Bulk>6.60</Bulk>
+                    <WorkToMake>17000</WorkToMake>
+                </statBases>
+                <costList>
+                    <Chemfuel>10</Chemfuel>
+                    <Steel>50</Steel>
+                    <ComponentIndustrial>2</ComponentIndustrial>
+                </costList>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                    <warmupTime>0.6</warmupTime>
+                    <range>18</range>
+                    <soundCast>HRK_Shot_KSG</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>15</magazineSize>
+                    <reloadOneAtATime>true</reloadOneAtATime>
+                    <reloadTime>0.85</reloadTime>
+                    <ammoSet>AmmoSet_12Gauge</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                    <aiAimMode>Snapshot</aiAimMode>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_AssaultWeapon</li>
+                </weaponTags>
+            </li>
 
-            </operations>
-        </match>
+            <!--===== HRK_KelTecKSG =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>HRK_KelTecKSG</defName>
+                <statBases>
+                    <Mass>2.8</Mass>
+                    <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
+                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <ShotSpread>0.14</ShotSpread>
+                    <SwayFactor>1.35</SwayFactor>
+                    <Bulk>6.60</Bulk>
+                    <WorkToMake>17000</WorkToMake>
+                </statBases>
+                <costList>
+                    <Chemfuel>10</Chemfuel>
+                    <Steel>50</Steel>
+                    <ComponentIndustrial>2</ComponentIndustrial>
+                </costList>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                    <warmupTime>0.6</warmupTime>
+                    <range>18</range>
+                    <soundCast>HRK_Shot_KSG</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>15</magazineSize>
+                    <reloadOneAtATime>true</reloadOneAtATime>
+                    <reloadTime>0.85</reloadTime>
+                    <ammoSet>AmmoSet_12Gauge</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                    <aiAimMode>Snapshot</aiAimMode>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_AssaultWeapon</li>
+                </weaponTags>
+            </li>
+
+            <!--===== HRK_KelTecKSG25S =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>HRK_KelTecKSG25S</defName>
+                <statBases>
+                    <Mass>2.8</Mass>
+                    <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
+                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <ShotSpread>0.14</ShotSpread>
+                    <SwayFactor>1.35</SwayFactor>
+                    <Bulk>6.60</Bulk>
+                    <WorkToMake>17000</WorkToMake>
+                </statBases>
+                <costList>
+                    <Chemfuel>10</Chemfuel>
+                    <Steel>50</Steel>
+                    <ComponentIndustrial>2</ComponentIndustrial>
+                </costList>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                    <warmupTime>0.6</warmupTime>
+                    <range>18</range>
+                    <soundCast>HRK_Shot_KSG</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>15</magazineSize>
+                    <reloadOneAtATime>true</reloadOneAtATime>
+                    <reloadTime>0.85</reloadTime>
+                    <ammoSet>AmmoSet_12Gauge</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                    <aiAimMode>Snapshot</aiAimMode>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_AssaultWeapon</li>
+                </weaponTags>
+            </li>
+
+            <!--===== HRK_KelTecP50P =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>HRK_KelTecP50P</defName>
+                <statBases>
+                    <Mass>2.8</Mass>
+                    <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
+                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <ShotSpread>0.14</ShotSpread>
+                    <SwayFactor>1.35</SwayFactor>
+                    <Bulk>6.60</Bulk>
+                    <WorkToMake>17000</WorkToMake>
+                </statBases>
+                <costList>
+                    <Chemfuel>10</Chemfuel>
+                    <Steel>50</Steel>
+                    <ComponentIndustrial>2</ComponentIndustrial>
+                </costList>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                    <warmupTime>0.6</warmupTime>
+                    <range>18</range>
+                    <soundCast>HRK_Shot_KSG</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>15</magazineSize>
+                    <reloadOneAtATime>true</reloadOneAtATime>
+                    <reloadTime>0.85</reloadTime>
+                    <ammoSet>AmmoSet_12Gauge</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                    <aiAimMode>Snapshot</aiAimMode>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_AssaultWeapon</li>
+                </weaponTags>
+            </li>
+
+            <!--===== HRK_KelTecRDB_C =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>HRK_KelTecRDB_C</defName>
+                <statBases>
+                    <Mass>2.8</Mass>
+                    <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
+                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <ShotSpread>0.14</ShotSpread>
+                    <SwayFactor>1.35</SwayFactor>
+                    <Bulk>6.60</Bulk>
+                    <WorkToMake>17000</WorkToMake>
+                </statBases>
+                <costList>
+                    <Chemfuel>10</Chemfuel>
+                    <Steel>50</Steel>
+                    <ComponentIndustrial>2</ComponentIndustrial>
+                </costList>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                    <warmupTime>0.6</warmupTime>
+                    <range>18</range>
+                    <soundCast>HRK_Shot_KSG</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>15</magazineSize>
+                    <reloadOneAtATime>true</reloadOneAtATime>
+                    <reloadTime>0.85</reloadTime>
+                    <ammoSet>AmmoSet_12Gauge</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                    <aiAimMode>Snapshot</aiAimMode>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_AssaultWeapon</li>
+                </weaponTags>
+            </li>
+
+            <!--===== HRK_KelTecRFB =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>HRK_KelTecRFB</defName>
+                <statBases>
+                    <Mass>2.8</Mass>
+                    <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
+                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <ShotSpread>0.14</ShotSpread>
+                    <SwayFactor>1.35</SwayFactor>
+                    <Bulk>6.60</Bulk>
+                    <WorkToMake>17000</WorkToMake>
+                </statBases>
+                <costList>
+                    <Chemfuel>10</Chemfuel>
+                    <Steel>50</Steel>
+                    <ComponentIndustrial>2</ComponentIndustrial>
+                </costList>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                    <warmupTime>0.6</warmupTime>
+                    <range>18</range>
+                    <soundCast>HRK_Shot_KSG</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>15</magazineSize>
+                    <reloadOneAtATime>true</reloadOneAtATime>
+                    <reloadTime>0.85</reloadTime>
+                    <ammoSet>AmmoSet_12Gauge</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                    <aiAimMode>Snapshot</aiAimMode>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_AssaultWeapon</li>
+                </weaponTags>
+            </li>
+
+            <!--===== HRK_KelTecRFB_C =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>HRK_KelTecRFB_C</defName>
+                <statBases>
+                    <Mass>2.8</Mass>
+                    <RangedWeapon_Cooldown>0.97</RangedWeapon_Cooldown>
+                    <SightsEfficiency>1.0</SightsEfficiency>
+                    <ShotSpread>0.14</ShotSpread>
+                    <SwayFactor>1.35</SwayFactor>
+                    <Bulk>6.60</Bulk>
+                    <WorkToMake>17000</WorkToMake>
+                </statBases>
+                <costList>
+                    <Chemfuel>10</Chemfuel>
+                    <Steel>50</Steel>
+                    <ComponentIndustrial>2</ComponentIndustrial>
+                </costList>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                    <warmupTime>0.6</warmupTime>
+                    <range>18</range>
+                    <soundCast>HRK_Shot_KSG</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </Properties>
+                <AmmoUser>
+                    <magazineSize>15</magazineSize>
+                    <reloadOneAtATime>true</reloadOneAtATime>
+                    <reloadTime>0.85</reloadTime>
+                    <ammoSet>AmmoSet_12Gauge</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                    <aiAimMode>Snapshot</aiAimMode>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_AssaultWeapon</li>
+                </weaponTags>
+            </li>
+
+        </operations>
     </Operation>
 </Patch>

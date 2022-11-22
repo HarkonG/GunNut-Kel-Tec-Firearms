@@ -384,6 +384,114 @@
                 </weaponTags>
             </li>
 
+            <!--===== KSG SETTINGS =====-->
+            <li Class="XmlExtensions.OptionalPatch">
+                <modId>Harkon.GunNut.KelTec</modId>
+                <key>toggleKSGUBGLSystem</key>
+                <defaultValue>false</defaultValue>
+                <caseTrue>
+
+                    <!-- ========== AmmoSet ========== -->
+                    <Operation Class="PatchOperationFindMod">
+                        <mods>
+                            <li>Combat Extended Attachments</li>
+                        </mods>
+                        <nomatch Class="PatchOperationAdd">
+                            <xpath>/Defs</xpath>
+                            <value>
+                                <!-- The gun doesn't like having the exact same AmmoSetDef in the underbarrel, so we cheat. -->
+                                <CombatExtended.AmmoSetDef>
+                                    <defName>AmmoSet_12Gauge_KSG_UB</defName>
+                                    <label>12 Gauge</label>
+                                    <ammoTypes>
+                                        <Ammo_12Gauge_Buck>Bullet_12Gauge_Buck</Ammo_12Gauge_Buck>
+                                        <Ammo_12Gauge_Slug>Bullet_12Gauge_Slug</Ammo_12Gauge_Slug>
+                                        <Ammo_12Gauge_Beanbag>Bullet_12Gauge_Beanbag</Ammo_12Gauge_Beanbag>
+                                        <Ammo_12Gauge_ElectroSlug>Bullet_12Gauge_ElectroSlug</Ammo_12Gauge_ElectroSlug>
+                                    </ammoTypes>
+                                    <similarTo>AmmoSet_Shotgun</similarTo>
+                                </CombatExtended.AmmoSetDef>
+                            </value>
+                        </nomatch >
+                    </Operation>
+
+                    <!-- ========== Mag Capacity ========== -->
+                    <Operation Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_KelTecKSG"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+                        <value>
+                            <magazineSize>7</magazineSize>
+                        </value>
+                    </Operation>
+
+                    <Operation Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_KelTecKSG25S"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+                        <value>
+                            <magazineSize>12</magazineSize>
+                        </value>
+                    </Operation>
+
+                    <!-- ========== UBGLs ========== -->
+                    <Operation Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="HRK_KelTecKSG"]/comps</xpath>
+                        <value>
+                            <li Class="CombatExtended.CompProperties_UnderBarrel">
+                                <propsUnderBarrel>
+                                    <magazineSize>7</magazineSize>
+                                    <reloadOneAtATime>true</reloadOneAtATime>
+                                    <reloadTime>0.95</reloadTime>
+                                    <ammoSet>AmmoSet_12Gauge_KSG_UB</ammoSet>
+                                </propsUnderBarrel>
+                                <verbPropsUnderBarrel>
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                                    <warmupTime>0.6</warmupTime>
+                                    <range>16</range>
+                                    <soundCast>HRK_Shot_KelTecKSG</soundCast>
+                                    <soundCastTail>GunTail_Medium</soundCastTail>
+                                    <muzzleFlashScale>9</muzzleFlashScale>
+                                    <recoilAmount>3.10</recoilAmount>
+                                </verbPropsUnderBarrel>
+                                <propsFireModesUnderBarrel>
+                                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                                    <aiAimMode>Snapshot</aiAimMode>
+                                </propsFireModesUnderBarrel>
+                            </li>
+                        </value>
+                    </Operation>
+
+                    <Operation Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="HRK_KelTecKSG25S"]/comps</xpath>
+                        <value>
+                            <li Class="CombatExtended.CompProperties_UnderBarrel">
+                                <propsUnderBarrel>
+                                    <magazineSize>12</magazineSize>
+                                    <reloadOneAtATime>true</reloadOneAtATime>
+                                    <reloadTime>0.95</reloadTime>
+                                    <ammoSet>AmmoSet_12Gauge_KSG_UB</ammoSet>
+                                </propsUnderBarrel>
+                                <verbPropsUnderBarrel>
+                                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                                    <warmupTime>0.5</warmupTime>
+                                    <range>18</range>
+                                    <soundCast>HRK_Shot_KelTecKSG</soundCast>
+                                    <soundCastTail>GunTail_Medium</soundCastTail>
+                                    <muzzleFlashScale>9</muzzleFlashScale>
+                                    <recoilAmount>2.66</recoilAmount>
+                                </verbPropsUnderBarrel>
+                                <propsFireModesUnderBarrel>
+                                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                                    <aiAimMode>Snapshot</aiAimMode>
+                                </propsFireModesUnderBarrel>
+                            </li>
+                        </value>
+                    </Operation>
+
+                </caseTrue>
+            </li>
+
         </operations>
     </Operation>
 </Patch>

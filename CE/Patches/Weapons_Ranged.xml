@@ -385,6 +385,13 @@
             </li>
 
             <!--===== KSG SETTINGS =====-->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="HRK_KelTecKSG" or defName="HRK_KelTecKSG25S"]/description</xpath>
+                <value>
+                    <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells. There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds. \n\nRemember that you can use the settings to enable or disable the attachment/UBGL system on this weapon.</description>
+                </value>
+            </li>
+
             <li Class="XmlExtensions.OptionalPatch">
                 <modId>Harkon.GunNut.KelTec</modId>
                 <key>toggleKSGUBGLSystem</key>

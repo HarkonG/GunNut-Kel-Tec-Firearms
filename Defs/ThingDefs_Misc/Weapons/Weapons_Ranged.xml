@@ -22,7 +22,7 @@
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_KelTecCP33P</defName>
     <label>Kel-Tec CP33</label>
-    <description>CP stands for Competition Pistol and 33, well… it holds a staggering 33 rounds in each magazine, right out of the box.</description>
+    <description>CP stands for Competition Pistol and 33, well… it holds a staggering 33 rounds in each magazine, right out of the box. This one has a quad stack mag with 66 round capacity.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecCP33P/HRK_KelTecCP33P_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -109,7 +109,7 @@
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_KelTecKSG</defName>
     <label>Kel-Tec KSG</label>
-    <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells.  There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
+    <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells. There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecKSG/HRK_KelTecKSG_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -184,7 +184,7 @@
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_KelTecKSG25S</defName>
     <label>Kel-Tec KSG-25</label>
-    <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells.  There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
+    <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells. There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecKSG25S/HRK_KelTecKSG25S_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>

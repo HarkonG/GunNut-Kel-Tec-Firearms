@@ -585,6 +585,9 @@
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
+    <equippedStatOffsets>
+      <HuntingStealth>0.15</HuntingStealth>
+    </equippedStatOffsets>
   </ThingDef>
 
 </Defs>

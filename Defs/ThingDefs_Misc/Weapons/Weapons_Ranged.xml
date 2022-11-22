@@ -281,7 +281,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
-    <soundInteract>BlowbackOperation</soundInteract>
+    <soundInteract>HRK_Reload_P90_a</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>

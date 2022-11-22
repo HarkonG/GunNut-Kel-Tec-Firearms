@@ -151,7 +151,7 @@
                     <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
                     <warmupTime>0.6</warmupTime>
                     <range>16</range>
-                    <soundCast>HRK_Shot_KSG</soundCast>
+                    <soundCast>HRK_Shot_KelTecKSG</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                     <recoilAmount>3.10</recoilAmount>
@@ -194,7 +194,7 @@
                     <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
                     <warmupTime>0.5</warmupTime>
                     <range>18</range>
-                    <soundCast>HRK_Shot_KSG</soundCast>
+                    <soundCast>HRK_Shot_KelTecKSG</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                     <recoilAmount>2.66</recoilAmount>
@@ -234,7 +234,7 @@
                 <Properties>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_FN57x38mm_FMJ</defaultProjectile>
+                    <defaultProjectile>Bullet_FN57x28mm_FMJ</defaultProjectile>
                     <warmupTime>0.5</warmupTime>
                     <range>15</range>
                     <soundCast>HRK_Shot_KelTecP50P</soundCast>
@@ -245,7 +245,7 @@
                 <AmmoUser>
                     <magazineSize>50</magazineSize>
                     <reloadTime>4</reloadTime>
-                    <ammoSet>AmmoSet_FN57x38mm</ammoSet>
+                    <ammoSet>AmmoSet_FN57x28mm</ammoSet>
                 </AmmoUser>
                 <FireModes>
                     <aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -278,10 +278,10 @@
                 <Properties>
                     <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Bullet_556x45NATO_FMJ</defaultProjectile>
+                    <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
                     <warmupTime>1.0</warmupTime>
                     <range>62</range>
-                    <soundCast>HRK_Shot_KSG</soundCast>
+                    <soundCast>HRK_Shot_KelTecRDB</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                     <recoilAmount>1.52</recoilAmount>
@@ -289,7 +289,7 @@
                 <AmmoUser>
                     <magazineSize>30</magazineSize>
                     <reloadTime>4.5</reloadTime>
-                    <ammoSet>AmmoSet_556x45NATO</ammoSet>
+                    <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
                 </AmmoUser>
                 <FireModes>
                     <aiUseBurstMode>FALSE</aiUseBurstMode>

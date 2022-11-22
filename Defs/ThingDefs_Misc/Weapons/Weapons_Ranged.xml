@@ -62,7 +62,7 @@
         <range>28</range>
         <soundCast>HRK_Shot_KelTecCP33P</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -314,7 +314,7 @@
         <range>28</range>
         <soundCast>HRK_Shot_KelTecP50P</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <muzzleFlashScale>8</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -560,7 +560,7 @@
         <range>34</range>
         <soundCast>HRK_Shot_KelTecRFBSD</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
     <tools>

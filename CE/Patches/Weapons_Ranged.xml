@@ -109,7 +109,7 @@
                     <range>12</range>
                     <soundCast>HRK_Shot_KelTecCP33P</soundCast>
                     <soundCastTail>GunTail_Light</soundCastTail>
-                    <muzzleFlashScale>9</muzzleFlashScale>
+                    <muzzleFlashScale>3</muzzleFlashScale>
                     <recoilAmount>1.59</recoilAmount>
                 </Properties>
                 <AmmoUser>
@@ -239,7 +239,7 @@
                     <range>15</range>
                     <soundCast>HRK_Shot_KelTecP50P</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
-                    <muzzleFlashScale>9</muzzleFlashScale>
+                    <muzzleFlashScale>8</muzzleFlashScale>
                     <recoilAmount>1.57</recoilAmount>
                 </Properties>
                 <AmmoUser>
@@ -367,7 +367,7 @@
                     <range>68</range>
                     <soundCast>HRK_Shot_KelTecRFBSD</soundCast>
                     <soundCastTail>GunTail_Medium</soundCastTail>
-                    <muzzleFlashScale>9</muzzleFlashScale>
+                    <muzzleFlashScale>6</muzzleFlashScale>
                     <recoilAmount>1.80</recoilAmount>
                 </Properties>
                 <AmmoUser>

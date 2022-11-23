@@ -84,7 +84,12 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedLight</li>
+    </weaponClasses>
     <weaponTags>
+      <li>ShortShots</li>
       <li>SimpleGun</li>
     </weaponTags>
   </ThingDef>
@@ -336,7 +341,12 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedLight</li>
+    </weaponClasses>
     <weaponTags>
+      <li>ShortShots</li>
       <li>Autopistol</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>

@@ -355,7 +355,7 @@
   <!--===== Kel-Tec RDB17 =====-->
   <ThingDef ParentName="BaseBullet">
     <defName>HRK_Bullet_KelTecRDB_C</defName>
-    <label>Kel-Tec RDB Bullet</label>
+    <label>Kel-Tec RDB bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -441,7 +441,7 @@
   <!--===== Kel-Tec RFB =====-->
   <ThingDef ParentName="BaseBullet">
     <defName>HRK_Bullet_KelTecRFB</defName>
-    <label>Kel-Tec RFB shotgun blast</label>
+    <label>Kel-Tec RFB bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>

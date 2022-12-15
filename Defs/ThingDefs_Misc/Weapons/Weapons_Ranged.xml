@@ -28,7 +28,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
-    <soundInteract>HRK_Reload_PM_a</soundInteract>
+    <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.05</generateCommonality>
     <recipeMaker>
       <recipeUsers>
@@ -121,7 +121,7 @@
       <drawSize>1.0</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>HRK_Interact_FastPump_a</soundInteract>
+    <soundInteract>Interact_Shotgun</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -196,7 +196,7 @@
       <drawSize>1.0</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>HRK_Interact_FastPump_a</soundInteract>
+    <soundInteract>Interact_Shotgun</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -286,7 +286,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
-    <soundInteract>HRK_Reload_P90_a</soundInteract>
+    <soundInteract>Interact_Autopistol</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -378,7 +378,7 @@
       <drawSize>1.0</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>HRK_Reload_STANAG</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -458,14 +458,14 @@
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_KelTecRFB</defName>
     <label>Kel-Tec RFB</label>
-    <description>The Kel-Tec RFB (Rifle, Forward-ejection, Bullpup)[4] is a gas-operated bullpup type semi-automatic rifle, manufactured by Kel-Tec Industries of Florida.</description>
+    <description>The Kel-Tec RFB (Rifle, Forward-ejection, Bullpup) is a gas-operated bullpup type semi-automatic rifle, manufactured by Kel-Tec Industries of Florida.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecRFB/HRK_KelTecRFB_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>HRK_Reload_KelTecRFB_a</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -530,14 +530,14 @@
   <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
     <defName>HRK_KelTecRFB_C</defName>
     <label>Kel-Tec RFB Hunter</label>
-    <description>The Kel-Tec RFB (Rifle, Forward-ejection, Bullpup)[4] is a gas-operated bullpup type semi-automatic rifle, manufactured by Kel-Tec Industries of Florida.</description>
+    <description>The Kel-Tec RFB (Rifle, Forward-ejection, Bullpup) is a gas-operated bullpup type semi-automatic rifle, manufactured by Kel-Tec Industries of Florida.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_KelTecRFB_C/HRK_KelTecRFB_C_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>HRK_Reload_KelTecRFB_a</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>

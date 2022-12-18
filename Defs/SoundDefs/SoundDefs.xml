@@ -27,7 +27,7 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Weapons/HRK_Reload_FastPump_a</clipPath>
+                        <clipPath>Weapons/HRK_Reload_FastPump</clipPath>
                     </li>
                 </grains>
                 <volumeRange>

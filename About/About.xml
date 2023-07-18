@@ -20,4 +20,8 @@
 	<loadAfter>
 		<li>Harkon.GunNut.CORE</li>
 	</loadAfter>
+	<!--<loadBefore>
+		<li>Keshash.AmmoVarietyShotgun</li>
+		<li>Keshash.AmmoVarietyShotgun</li>
+	</loadBefore>-->
 </ModMetaData>

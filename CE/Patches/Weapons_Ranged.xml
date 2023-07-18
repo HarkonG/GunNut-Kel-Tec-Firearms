@@ -396,31 +396,7 @@
                 <modId>Harkon.GunNut.KelTec</modId>
                 <key>toggleKSGUBGLSystem</key>
                 <defaultValue>false</defaultValue>
-                <caseTrue>
-
-                    <!-- ========== AmmoSet ========== -->
-                    <Operation Class="PatchOperationFindMod">
-                        <mods>
-                            <li>Combat Extended Attachments</li>
-                        </mods>
-                        <nomatch Class="PatchOperationAdd">
-                            <xpath>/Defs</xpath>
-                            <value>
-                                <!-- The gun doesn't like having the exact same AmmoSetDef in the underbarrel, so we cheat. -->
-                                <CombatExtended.AmmoSetDef>
-                                    <defName>AmmoSet_12Gauge_KSG_UB</defName>
-                                    <label>12 Gauge</label>
-                                    <ammoTypes>
-                                        <Ammo_12Gauge_Buck>Bullet_12Gauge_Buck</Ammo_12Gauge_Buck>
-                                        <Ammo_12Gauge_Slug>Bullet_12Gauge_Slug</Ammo_12Gauge_Slug>
-                                        <Ammo_12Gauge_Beanbag>Bullet_12Gauge_Beanbag</Ammo_12Gauge_Beanbag>
-                                        <Ammo_12Gauge_ElectroSlug>Bullet_12Gauge_ElectroSlug</Ammo_12Gauge_ElectroSlug>
-                                    </ammoTypes>
-                                    <similarTo>AmmoSet_Shotgun</similarTo>
-                                </CombatExtended.AmmoSetDef>
-                            </value>
-                        </nomatch >
-                    </Operation>
+                <caseTrue>               
 
                     <!-- ========== Mag Capacity ========== -->
                     <Operation Class="PatchOperationReplace">

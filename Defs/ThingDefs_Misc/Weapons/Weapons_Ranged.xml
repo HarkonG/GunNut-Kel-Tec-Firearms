@@ -24,10 +24,11 @@
     <label>Kel-Tec CP33</label>
     <description>CP stands for Competition Pistol and 33, well… it holds a staggering 33 rounds in each magazine, right out of the box. This one has a quad stack mag with 66 round capacity.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_KelTecCP33P/HRK_KelTecCP33P_Black</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_KelTecCP33P/HRK_KelTecCP33P_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
+    <!--<uiIconPath>UI/Weapons/HRK_KelTecCP33P/HRK_KelTecCP33P_Black</uiIconPath>-->
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.05</generateCommonality>
     <recipeMaker>
@@ -116,10 +117,11 @@
     <label>Kel-Tec KSG</label>
     <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells. There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_KelTecKSG/HRK_KelTecKSG_Black</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_KelTecKSG/HRK_KelTecKSG_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
+    <uiIconPath>UI/Weapons/HRK_KelTecKSG/HRK_KelTecKSG_Black</uiIconPath>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Shotgun</soundInteract>
     <recipeMaker>
@@ -191,10 +193,11 @@
     <label>Kel-Tec KSG-25</label>
     <description>The KSG is a bullpup 12-gauge pump-action shotgun designed by Kel-Tec. It has two tube magazines which the user of the gun can switch between manually. Each tube holds up to seven shells. There is also a larger variant, called the KSG-25, which holds 24+1 rounds to the originals 14+1 rounds.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_KelTecKSG25S/HRK_KelTecKSG25S_Black</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_KelTecKSG25S/HRK_KelTecKSG25S_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
+    <uiIconPath>UI/Weapons/HRK_KelTecKSG25S/HRK_KelTecKSG25S_Black</uiIconPath>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Shotgun</soundInteract>
     <recipeMaker>
@@ -282,10 +285,11 @@
     <label>Kel-Tec P50</label>
     <description>The P50 is a straight blowback semi-automatic pistol that feeds from FN P90 magazines.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_KelTecP50P/HRK_KelTecP50P_Black</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_KelTecP50P/HRK_KelTecP50P_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
+    <!--<uiIconPath>UI/Weapons/HRK_KelTecP50P/HRK_KelTecP50P_Black</uiIconPath>-->
     <soundInteract>Interact_Autopistol</soundInteract>
     <recipeMaker>
       <recipeUsers>
@@ -373,10 +377,11 @@
     <label>Kel-Tec RDB</label>
     <description>The Kel-Tec RDB (Rifle, Downward-ejection, Bullpup) is a bullpup carbine offered in 5.56x45mm NATO semi-automatic rifle, manufactured by Kel-Tec Industries of Florida. It uses a rotary bolt with a spring loaded ejector and an extractor facing down, ejecting spent shell casings downward, allowing easy ambidextrous use.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_KelTecRDB_C/HRK_KelTecRDB_C_Black</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_KelTecRDB_C/HRK_KelTecRDB_C_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
+    <uiIconPath>UI/Weapons/HRK_KelTecRDB_C/HRK_KelTecRDB_C_Black</uiIconPath>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
@@ -460,10 +465,11 @@
     <label>Kel-Tec RFB</label>
     <description>The Kel-Tec RFB (Rifle, Forward-ejection, Bullpup) is a gas-operated bullpup type semi-automatic rifle, manufactured by Kel-Tec Industries of Florida.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_KelTecRFB/HRK_KelTecRFB_Black</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_KelTecRFB/HRK_KelTecRFB_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
+    <uiIconPath>UI/Weapons/HRK_KelTecRFB/HRK_KelTecRFB_Black</uiIconPath>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
@@ -532,10 +538,11 @@
     <label>Kel-Tec RFB Hunter</label>
     <description>The Kel-Tec RFB (Rifle, Forward-ejection, Bullpup) is a gas-operated bullpup type semi-automatic rifle, manufactured by Kel-Tec Industries of Florida.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_KelTecRFB_C/HRK_KelTecRFB_C_Black</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_KelTecRFB_C/HRK_KelTecRFB_C_Black</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
+    <uiIconPath>UI/Weapons/HRK_KelTecRFB_C/HRK_KelTecRFB_C_Black</uiIconPath>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
